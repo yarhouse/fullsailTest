@@ -1,0 +1,34 @@
+<div id="aof" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1">
+      <h2 class="text-center">
+        <div><span>AREAS OF FOCUS</span></div>
+      </h2>
+    </div>
+    <accordion close-others="oneAtATime" class="visible-xs">
+      <accordion-group ng-repeat="focus in aofs" is-open="status.open" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+        <accordion-heading>
+          <img ng-src="img/mobile_AOF-{{$index+1}}.png"><p class="title">{{focus.title}}</p>
+        </accordion-heading>
+        {{focus.content}}
+      </accordion-group>
+    </accordion>
+    <div class="col-sm-12 colored hidden-xs">
+      <div class="row">
+        <div class="col-md-1 hidden-xs hidden-sm"></div>
+        <div class="col-sm-4 hidden-xs col-md-3_5" ng-repeat="focus in aofs">
+          <div class="imgwrap">
+            <img ng-src="img/AOF-{{$index+1}}.png">
+          </div>
+          <h4><p class="title"><span>{{focus.title}}</span></p></h4>
+          <p class="content">{{focus.content}}</p>
+        </div>
+        <div class="col-md-1 hidden-xs hidden-sm"></div>
+      </div>
+      <div class="row hidden-xs">
+        <div data-ng-include data-src="'partials/earn.html'" class="col-sm-12 col-md-10 col-md-push-1 hidden-xs"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

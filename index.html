@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fullsailTest">
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="angular/angular.js" type="text/javascript"></script>
+    <script src="angular/angular-resource.js" type="text/javascript"></script>
+    <script src="angular/angular-route.js" type="text/javascript"></script>
+    <script src="angular/angular-sanitize.js" type="text/javascript"></script>
+    <script src="angular/angular-scenario.js" type="text/javascript"></script>
+    <script src="angular/ui-bootstrap-tpls-0.12.0.js" type="text/javascript"></script>
+    <script src="angular/ui-utils.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
+    
+  </head>
+  <body ng-controller="ApplicationCtrl">
+    <div data-ng-include data-src="'partials/header.html'" class=""></div>
+    <div data-ng-include data-src="'partials/banner.html'" class=""></div>
+    <div data-ng-include data-src="'partials/degree-dscrpt.html'" class="visible-xs"></div>
+    <div data-ng-include data-src="'partials/aof.html'" class=""></div>
+    <div data-ng-include data-src="'partials/earn.html'" class="visible-xs"></div>
+    <div data-ng-include data-src="'partials/carousel.html'" class=""></div>
+    <div data-ng-include data-src="'partials/form.html'" class="visible-xs"></div>
+    <div data-ng-include data-src="'partials/footer.html'" class=""></div>
+  </body>
+</html>

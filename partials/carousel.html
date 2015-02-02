@@ -1,0 +1,28 @@
+<div id="carousel" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5">
+      <p class="text-center exper">THE FULL SAIL ONLINE EXPERIENCE</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-push-1">
+      <carousel interval="myInterval" class="row">
+        <slide ng-repeat="slide in slides" active="slide.active" >
+          <div class="row">
+            <div class="col-xs-6">
+              <p class="img_holder">
+                <img ng-class="slide.img" ng-src="img/{{slide.img}}.png">
+              </P>
+            </div>
+            <div class="col-xs-6 col-md-5 text_holder">
+              <h3 class="text-left title" ng-bing-html="">{{slide.title}}<span class="subtitle" ng-if="slide.subtitle"><br/>{{slide.subtitle}}</span></h3>
+              <ul class="list-unstyled text-left" ng-repeat="content in slide.content">
+                <li>{{content.text}}</li>
+              </ul>
+            </div>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</div>
